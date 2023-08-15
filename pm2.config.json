@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "nest-queue",
+      "script": "dist/main.js",
+      "watch": true,
+      "instances": "max",
+      "exec_mode": "cluster",
+      "autorestart": true,
+      "max_memory_restart": "600M",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "ignoreWatch": ["node_modules"],
+      "args": ["--color"]
+    }
+  ]
+}
